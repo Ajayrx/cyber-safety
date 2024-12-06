@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Scams - Video</title>
+    <!-- Include Video.js CSS -->
+    <link href="https://vjs.zencdn.net/8.0.0/video-js.css" rel="stylesheet" />
+    <!-- Link to Custom Video CSS -->
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <!-- Background Video using Video.js -->
+    <video id="background-video" class="video-js vjs-default-skin" autoplay loop muted>
+        <source src="videos/cyber-scams.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="video.html" class="active">Video</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Cyber Scams</h1>
+        <p>Understanding and avoiding cyber scams to stay safe online.</p>
+    </section>
+
+    <section class="video-container">
+        <!-- Main Video Player using Video.js -->
+        <video id="main-video" class="video-js vjs-default-skin" controls>
+            <source src="videos/cyber-scams.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="video-description">
+        <h2>About This Video</h2>
+        <p>This video highlights common cyber scams and provides tips to protect yourself online.</p>
+    </section>
+
+    <div class="cta-buttons">
+        <a href="video.html" class="watch-again">Watch Again</a>
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cyber Safety. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Include Video.js JS -->
+    <script src="https://vjs.zencdn.net/8.0.0/video.js"></script>
+    <script src="video.js"></script>
+</body>
+</html>

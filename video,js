@@ -1,0 +1,16 @@
+// Initialize Video.js for main video player with custom controls
+var mainPlayer = videojs('main-video', {
+    controls: true,
+    autoplay: false,
+    preload: 'auto'
+});
+
+// Initialize Video.js for background video with auto sound
+var backgroundPlayer = videojs('background-video', {
+    autoplay: true,
+    loop: true,
+    muted: false, // Enable sound in the background video
+    controls: false,  // Hide controls for background video
+    width: '100%',
+    height: '100%'
+});

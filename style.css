@@ -68,24 +68,45 @@ header a{
 .carousel .list .item .topic{
     color: #f1683a;
 }
-.carousel .list .item .buttons{
-    display: grid;
-    grid-template-columns: repeat(2, 130px);
-    grid-template-rows: 40px;
-    gap: 5px;
-    margin-top: 20px;
+.carousel .list .item .des {
+    margin-bottom: 20px; /* Adjust this value as needed */
+    font-size: 18px; /* Optional: Adjust the text size if needed */
+    line-height: 1.6; /* Optional: Improve text readability */
 }
-.carousel .list .item .buttons button{
+.carousel .list .item .buttons {
+    display: flex; /* Ensure buttons are aligned in a row */
+    gap: 0.25cm; /* Add the 0.5 cm gap between buttons */
+}
+.carousel .list .item .buttons button {
     border: none;
-    background-color: #eee;
-    letter-spacing: 3px;
+    padding: 11px 25px;
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
-.carousel .list .item .buttons button:nth-child(2){
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #eee;
+
+.carousel .list .item .buttons button:nth-child(1) {
+    background-color: #fff; /* White background for "See More" */
+    color: #000; /* Black bold text for "See More" */
+}
+
+.carousel .list .item .buttons button:nth-child(2) {
+    background-color: transparent; /* Transparent background for "Subscribe" */
+    color: #fff; /* White text for "Subscribe" */
+    border: 1px solid #fff; /* Border to match the design */
+}
+
+.carousel .list .item .buttons button:hover:nth-child(1) {
+    background-color: #05241c; /* Add a hover effect for "See More" */
+    color: #fff; /* White text on hover */
+}
+
+.carousel .list .item .buttons button:hover:nth-child(2) {
+    background-color: #fff; /* Change background to white on hover for "Subscribe" */
+    color: #000; /* Black text on hover */
 }
 /* thumbail */
 .thumbnail{
@@ -125,24 +146,26 @@ header a{
 /* arrows */
 .arrows{
     position: absolute;
+    
     top: 80%;
     right: 52%;
     z-index: 100;
     width: 300px;
     max-width: 30%;
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
 }
 .arrows button{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #eee4;
     border: none;
     color: #fff;
     font-family: monospace;
     font-weight: bold;
+    
     transition: .5s;
 }
 .arrows button:hover{
