@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: url('images/p2.jpg') no-repeat center center fixed; /* Background Image */
+    background: url('images/p21.jpg') no-repeat center center fixed; /* Background Image */
     background-size: cover; /* Ensure full coverage */
     color: #eee;
     line-height: 1.6;
@@ -52,12 +52,12 @@ header nav ul li a {
 
 header nav ul li a.active,
 header nav ul li a:hover {
-    color: #fff655;
+    color: #f1683a;
 }
 
 /* Hero Section */
 .hero {
-    text-align: left ;
+    text-align: left;
     padding: 100px 240px; /* Adjusted for the top navigation */
     background: transparent; /* Background image handles this */
     color: #fff;
@@ -69,7 +69,7 @@ header nav ul li a:hover {
 }
 
 .hero p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 /* Content Section */
@@ -82,39 +82,69 @@ header nav ul li a:hover {
 .content h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #fff655;
-    
+    color: #f1683a;
     text-align: center;
 }
 
-.scam-types {
+.solution-types {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-.scam-item {
+.solution-item {
     background: #222;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s, background 0.3s;
 }
 
-.scam-item h3 {
-    color: #f4d941;
+.solution-item h3 {
+    color: #f1683a;
     margin-bottom: 10px;
     font-size: 1.4em;
 }
 
-.scam-item p {
+.solution-item p {
     font-size: 1em;
     color: #ddd;
 }
 
-.scam-item:hover {
+.solution-item:hover {
     background: transparent;
     color: #000;
     transform: translateY(-5px);
+}
+
+/* Learn More Section */
+.learn-more {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.learn-more h2 {
+    font-size: 2em;
+    color: #f1683a;
+}
+
+.learn-more p {
+    font-size: 1.2em;
+}
+
+.learn-more .btn {
+    display: inline-block;
+    background-color: #f1683a;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.learn-more .btn:hover {
+    background-color: #e0572b;
 }
 
 /* Footer */

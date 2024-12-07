@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('images/p50.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #eee;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: color 0.3s, transform 0.2s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 5%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Company Details Section */
+.company-details {
+    max-width: 60%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.company-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #141313;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.company-details p {
+    font-size: 1.02em;
+    margin-bottom: 20px;
+    color: #edf1f4;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Login Form Section */
+.login-form {
+    max-width: 35%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: slideInRight 2s ease-in-out;
+}
+
+.login-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: rgb(8, 75, 143);
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #186de3f7;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    font-weight: 300;
+    border-radius: 29px;
+    background: #f1f1f1;
+    color: #333;
+    font-size: 1em;
+}
+
+.login-form input:focus {
+    outline: none;
+    background: #ffffff;
+    border: 1.5px solid #f14207;
+}
+
+/* Form Options Section */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.form-options .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Space between the checkbox and label */
+}
+
+.form-options label {
+    color: #343535a4;
+    font-weight: normal;
+    margin: 0;
+}
+
+.form-options .forgot-password {
+    color: #f14207;
+    text-decoration: none;
+}
+
+.form-options .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    font-weight: 600;
+    border-radius: 29px;
+    background: #55a5e3;
+    color: #eee;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-form button:hover {
+    background: #60eb71;
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 15px;
+    background: #222;
+    color: #eee;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .company-details,
+    .login-form {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .company-details h1 {
+        font-size: 2em;
+    }
+
+    .company-details p {
+        font-size: 1em;
+    }
+}

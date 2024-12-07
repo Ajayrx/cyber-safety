@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="subscribe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="safesphere.html">SafeSphere</a></li>
+                <li><a href="subscribe.html" class="active">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="company-details">
+            <h1>SafeSphere Inc</h1>
+            <p>
+                SafeSphere || is dedicated to providing top-notch cybersecurity solutions to protect individuals 
+                and organizations from the ever-evolving digital threats. Our mission is to create a safer digital 
+                space by raising awareness, offering robust tools, and educating people about online safety.
+            </p>
+        </section>
+
+        <section class="login-form">
+            <h2>Sign Up</h2>
+            <form id="subscribeForm">
+                <div class="form-group">
+                    <label for="username">SafeSphere ID</label>
+                    <input type="text" id="username" name="username" placeholder="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="password" required>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember"></label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+            </form> 
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SafeSphere. All rights reserved.</p>
+    </footer>
+
+    <script src="subscribe.js"></script>
+</body>
+
+</html>
