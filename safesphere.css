@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: url('images/pa1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 9px 240px;
+    background: transparent;
+    box-shadow: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background: transparent;
+    color: burlywood;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: left;
+    padding: 100px 5%;
+    color: #fff;
+    background: transparent;
+    
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease;
+}
+
+.hero-content h1 span {
+    color: #f3efef;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+    animation: fadeIn 2s ease;
+}
+
+.cta-button {
+    background: #f2efef;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: burlywood;
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about,
+.services,
+.vision,
+.contact {
+    padding: 50px 5%;
+    text-align: left;
+    background: transparent;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
+.about h2,
+.services h2,
+.vision h2,
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f6eeee;
+    text-transform: uppercase;
+    
+}
+
+.about p,
+.services p,
+.vision p,
+.contact p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: burlywood;
+    font-weight: bold;
+    
+}
+
+/* Services Grid */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Adjust space between items */
+    align-items: center; /* Align items vertically */
+    margin-top: 20px;
+}
+
+.service {
+    flex: 0 1 45%; /* Two items per row; adjust percentage as needed */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center; /* Center-align text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+}
+
+.service p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: burlywood;
+}
+
+.service:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .services-grid {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+}
