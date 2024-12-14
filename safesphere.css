@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -8,7 +7,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
 header nav ul {
     list-style: none;
     display: flex;
@@ -41,13 +39,11 @@ header nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Hero Section */
 .hero {
     text-align: left;
     padding: 100px 5%;
     color: #fff;
-    background: transparent;
-    
+    background: transparent;    
     border-radius: 10px;
 }
 
@@ -86,7 +82,6 @@ header nav ul li a:hover {
     transform: translateY(-5px);
 }
 
-/* About Section */
 .about,
 .services,
 .vision,
@@ -95,8 +90,7 @@ header nav ul li a:hover {
     text-align: left;
     background: transparent;
     margin-bottom: 20px;
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
 .about h2,
@@ -106,8 +100,7 @@ header nav ul li a:hover {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #f6eeee;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 
 .about p,
@@ -117,29 +110,27 @@ header nav ul li a:hover {
     font-size: 1.1em;
     line-height: 1.8;
     color: burlywood;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
-/* Services Grid */
 .services-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between; /* Adjust space between items */
-    align-items: center; /* Align items vertically */
+    justify-content: space-between; 
+    align-items: center; 
     margin-top: 20px;
 }
 
 .service {
-    flex: 0 1 45%; /* Two items per row; adjust percentage as needed */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    flex: 0 1 45%; 
+    background: rgba(0, 0, 0, 0.6); 
     color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    text-align: center; /* Center-align text */
+    text-align: center; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +157,6 @@ header nav ul li a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Footer */
 footer {
     background: #222;
     color: #eee;
@@ -175,7 +165,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -196,7 +185,6 @@ footer {
     }
 }
 
-/* Responsive Design */
 @media only screen and (max-width: 768px) {
     .services-grid {
         flex-direction: column;
