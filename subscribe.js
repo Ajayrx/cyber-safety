@@ -1,5 +1,3 @@
-// subscribe.js
-
 function handleLogin() {
     event.preventDefault();
     const username = document.getElementById("username").value;
